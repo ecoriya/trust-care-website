@@ -1,0 +1,246 @@
+/* General reset & container */
+body {
+  .background {
+  background-image: url('./homeimag.jpg'); /* ✅ correct path */
+  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2b5f93;
+  background-image:url('./cardilogy.jpg');
+  
+  color: #333;
+}
+
+.home-container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bedaf6;
+}
+
+/* Header section */
+.home-header h1 {
+  font-size: 2.8rem;
+  color: skyblue;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #5e6b7d;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Hero Image */
+.hero-img {
+  width: 350px;
+  border-radius: 16px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}/* Home.css */
+
+.hero {
+  background-color: #f0f4f8;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #1a2e4f;
+}
+
+.hero-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero-button:hover {
+  background-color: #005fa3;
+}
+
+.hero-subtext {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 15px;
+}
+
+
+
+/* Toggle Switch */
+.toggle-section {
+  margin: 25px 0;
+}
+
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+}
+
+.toggle-label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #cce6ff;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-color: white;
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.toggle-label input:checked + .slider {
+  background-color: #80bfff;
+}
+
+.toggle-label input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* Button Style */
+.view-doctors {
+  padding: 12px 30px;
+  background-color: #6fa8dc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-doctors:hover {
+  background-color: #4e89c6;
+}
+
+/* Info Bars */
+.info-bars {
+  width: 90%;
+  max-width: 720px;
+  margin: 30px auto;
+}
+
+.info-bar {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border-left: 5px solid #b3d9ff;
+}
+
+.info-bar:hover {
+  background: #e6f4ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon inside bar */
+.info-bar i,
+.info-bar .icon {
+  font-size: 2rem; /* increased icon size */
+  color: #4e89c6;
+  min-width: 32px;
+}
+
+/* Info content */
+.info-content {
+  font-size: 1rem;
+  color: #444;
+  padding-left: 5px;
+}
+
+/* Section headers */
+.section-title {
+  font-size: 1.6rem;
+  color: #003f6b;
+  margin: 30px 0 15px 0;
+  border-bottom: 2px solid #b3d9ff;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: left;
+}
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.icon-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #004e89;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #e6f4ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.icon-link i {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #4e89c6;
+}
+
+.icon-link:hover {
+  background-color: #d2ebff;
+  color: #003f6b;
+}
+
+.icon-link:hover i {
+  transform: rotate(8deg) scale(1.2);
+  color: #003f6b;
+}

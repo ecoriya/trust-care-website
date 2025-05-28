@@ -1,0 +1,26 @@
+.doctorCard {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100px;
+}
+
+.doctorImage {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.doctorName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.doctorDetails {
+  font-size: 1rem;
+  margin-top: 5px;
+}
